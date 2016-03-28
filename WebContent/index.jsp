@@ -6,7 +6,10 @@
 
 
 <!--  미친 뭐지 뭔가를 매우 많이 안썼음이 분명하다.  수업 시간에 씀-->
-<!--  여기에 list 사용을 위한 Dao와 getList()로 받아온 리스트를 정의해 준다. -->
+<!--  여기에 list 사용을 위한 Dao와 getList()로 받아온 리스트를 정의해 준다. 
+
+	그래 DAO를 써야 메소드를 쓸 수 있고 메소드를 써야 DB랑 통신할 수 있으니까.. 그리고 여기는 
+	그 중에서도 getList를 써야 테이블 표시가 되니까!-->
 <% 
 	GuestBookDao dao = new GuestBookDao(new MySQLGuestBookConnection( ) );
 	List<GuestBookVo> list = dao.getList();
